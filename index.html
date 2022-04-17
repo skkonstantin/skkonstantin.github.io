@@ -21,6 +21,32 @@
           </svg>
         </button>
 
+        <ul class="links main-header__links">
+          <li>
+            <a
+              href="https://t.me/+pII5qXtwCXg0MmI6"
+              target="_blank"
+              class="links__link"
+            >
+              <svg class="icon icon-tg">
+                <use xlink:href="images/icons.svg#icon-telegram"></use>
+              </svg>
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="https://vk.com/ivanovtennisschool"
+              target="_blank"
+              class="links__link"
+            >
+              <svg class="icon icon-vk">
+                <use xlink:href="images/icons.svg#icon-vk"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+
         <picture class="main-header__logo">
           <source
             type="image/webp"
@@ -43,24 +69,47 @@
 
         <div class="main-header__title">Школа тенниса <br />Антона Иванова</div>
 
-        <div class="sm-navigation hidden" data-js="sm-navigation">
-          <div class="sm-navigation__bg">
-            <div class="sm-navigation__inner-bg"></div>
-            <picture>
-              <source
-                type="image/webp"
-                srcset="images/bg-4-576.webp 576w, images/bg-4-768.webp 768w"
-                sizes="(min-width: 576px) 768px, 576px"
-              />
-              <source
-                type="image/jpeg"
-                srcset="images/bg-4-576.jpg 576w, images/bg-4-768.jpg 768w"
-                sizes="(min-width: 576px) 768px, 576px"
-              />
-              <img />
-            </picture>
-          </div>
+        <ul class="main-header__contacts contacts">
+          <li>
+            <span class="contacts__link">
+              <svg class="contacts__icon">
+                <use xlink:href="images/icons.svg#icon-phone"></use>
+              </svg>
 
+              <span class="contacts__title">Старший тренер</span>
+              <span class="contacts__data">+7(977)278-73-76</span>
+            </span>
+          </li>
+
+          <li>
+            <span class="contacts__link">
+              <svg class="contacts__icon contacts__icon--admin">
+                <use xlink:href="images/icons.svg#icon-phone"></use>
+              </svg>
+              <span class="contacts__title">Администратор</span>
+              <span class="contacts__data">+7(916)222-12-57</span>
+            </span>
+          </li>
+        </ul>
+
+        <nav class="main-header__main-nav main-nav">
+          <ul class="main-nav__items">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#about">О школе</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#schedule">Расписание</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#price">Стоимость</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#map">Как нас найти</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="sm-navigation hidden" data-js="sm-navigation">
           <button
             class="sm-navigation__hide-btn btn btn--container"
             data-js="sm-navigation-hide"
