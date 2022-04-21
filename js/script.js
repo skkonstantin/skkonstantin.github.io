@@ -25,3 +25,7 @@ function showMainNav() {
 function hideMainNav() {
   mainNav.classList.add("hidden");
 }
+
+Fancybox.bind('[data-fancybox="single"]', {
+  groupAttr: false,
+});

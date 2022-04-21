@@ -4,9 +4,18 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <title>Школа тенниса Антона Иванова</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link href="styles.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/fancybox/fancybox.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <script src="assets/fancybox/fancybox.umd.js"></script>
+
     <script src="js/script.js" defer></script>
   </head>
   <body>
@@ -104,6 +113,12 @@
               <a class="main-nav__link" href="#price">Стоимость</a>
             </li>
             <li class="main-nav__item">
+              <a class="main-nav__link" href="#gallery">Фото</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#lk">Личный кабинет</a>
+            </li>
+            <li class="main-nav__item">
               <a class="main-nav__link" href="#map">Как нас найти</a>
             </li>
           </ul>
@@ -151,6 +166,12 @@
                 <a class="main-nav__link" href="#price">Стоимость</a>
               </li>
               <li class="main-nav__item">
+                <a class="main-nav__link" href="#gallery">Фото</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="#lk">Личный кабинет</a>
+              </li>
+              <li class="main-nav__item">
                 <a class="main-nav__link" href="#map">Как нас найти</a>
               </li>
             </ul>
@@ -195,7 +216,7 @@
             </li>
 
             <li>
-              <a class="contacts__link" href="tel:+79162221257">
+              <a class="contacts__link" href="https://wa.me/79162221257">
                 <svg class="contacts__icon contacts__icon--admin">
                   <use xlink:href="images/icons.svg#icon-phone"></use>
                 </svg>
@@ -348,33 +369,32 @@
     <section class="schedule" id="schedule">
       <div class="content">
         <h2>Расписание</h2>
-        <picture>
-          <source
-            type="image/webp"
-            srcset="
-              images/schedule-576.webp   576w,
-              images/schedule-768.webp   768w,
-              images/schedule-992.webp   992w,
-              images/schedule-1200.webp 1200w
-            "
-            sizes="(min-width: 576px) 768px,(min-width: 768px) 992px, (min-width: 992px) 1200px, 576px"
-          />
-          <source
-            type="image/jpeg"
-            srcset="
-              images/schedule-576.jpg   576w,
-              images/schedule-768.jpg   768w,
-              images/schedule-992.jpg   992w,
-              images/schedule-1200.jpg 1200w
-            "
-            sizes="(min-width: 576px) 768px,(min-width: 768px) 992px, (min-width: 992px) 1200px, 576px"
-          />
-          <img
-            src="images/schedule-576.jpg"
-            data-ngsrc="images/schedule-1200.jpg"
-            data-nanogallery2-lightbox
-          />
-        </picture>
+
+        <a data-fancybox="single" href="images/schedule-1200.jpg">
+          <picture>
+            <source
+              type="image/webp"
+              srcset="
+                images/schedule-576.webp   576w,
+                images/schedule-768.webp   768w,
+                images/schedule-992.webp   992w,
+                images/schedule-1200.webp 1200w
+              "
+              sizes="(min-width: 576px) 768px,(min-width: 768px) 992px, (min-width: 992px) 1200px, 576px"
+            />
+            <source
+              type="image/jpeg"
+              srcset="
+                images/schedule-576.jpg   576w,
+                images/schedule-768.jpg   768w,
+                images/schedule-992.jpg   992w,
+                images/schedule-1200.jpg 1200w
+              "
+              sizes="(min-width: 576px) 768px,(min-width: 768px) 992px, (min-width: 992px) 1200px, 576px"
+            />
+            <img src="images/schedule-576.jpg" />
+          </picture>
+        </a>
       </div>
     </section>
 
@@ -403,6 +423,106 @@
             <img />
           </picture>
         </div>
+      </div>
+    </section>
+
+    <section id="gallery">
+      <div class="content photos">
+        <a href="images/gallery/1-800.jpg" data-fancybox="gal-1"
+          ><img src="images/gallery/1-250.jpg" alt="" loading="lazy" /></a
+        ><a href="images/gallery/2-800.jpg" data-fancybox="gal-1"
+          ><img src="images/gallery/2-250.jpg" alt="" loading="lazy" /></a
+        ><a href="images/gallery/3-800.jpg" data-fancybox="gal-1"
+          ><img src="images/gallery/3-250.jpg" alt="" loading="lazy" /></a
+        ><a href="images/gallery/4-800.jpg" data-fancybox="gal-1"
+          ><img src="images/gallery/4-250.jpg" alt="" loading="lazy" /></a
+        ><a href="images/gallery/5-800.jpg" data-fancybox="gal-1"
+          ><img src="images/gallery/5-250.jpg" alt="" loading="lazy" /></a
+        ><a href="images/gallery/6-800.jpg" data-fancybox="gal-1"
+          ><img src="images/gallery/6-250.jpg" alt="" loading="lazy" /></a
+        ><a href="images/gallery/7-800.jpg" data-fancybox="gal-1"
+          ><img src="images/gallery/7-250.jpg" alt="" loading="lazy" /></a
+        ><a href="images/gallery/8-800.jpg" data-fancybox="gal-1"
+          ><img src="images/gallery/8-250.jpg" alt="" loading="lazy" /></a
+        ><a href="images/gallery/9-800.jpg" data-fancybox="gal-1"
+          ><img src="images/gallery/9-250.jpg" alt="" loading="lazy" /></a
+        ><a href="images/gallery/10-800.jpg" data-fancybox="gal-1"
+          ><img src="images/gallery/10-250.jpg" alt="" loading="lazy" /></a
+        ><a href="images/gallery/11-800.jpg" data-fancybox="gal-1"
+          ><img src="images/gallery/11-250.jpg" alt="" loading="lazy" /></a
+        ><a href="images/gallery/12-800.jpg" data-fancybox="gal-1"
+          ><img src="images/gallery/12-250.jpg" alt="" loading="lazy" /></a
+        ><a href="images/gallery/13-800.jpg" data-fancybox="gal-1"
+          ><img src="images/gallery/13-250.jpg" alt="" loading="lazy" /></a
+        ><a href="images/gallery/14-800.jpg" data-fancybox="gal-1"
+          ><img src="images/gallery/14-250.jpg" alt="" loading="lazy" /></a
+        ><a href="images/gallery/15-800.jpg" data-fancybox="gal-1"
+          ><img src="images/gallery/15-250.jpg" alt="" loading="lazy" /></a
+        ><a href="images/gallery/16-800.jpg" data-fancybox="gal-1"
+          ><img src="images/gallery/16-250.jpg" alt="" loading="lazy" /></a
+        ><a href="images/gallery/17-800.jpg" data-fancybox="gal-1"
+          ><img src="images/gallery/17-250.jpg" alt="" loading="lazy" /></a
+        ><a href="images/gallery/18-800.jpg" data-fancybox="gal-1"
+          ><img src="images/gallery/18-250.jpg" alt="" loading="lazy" /></a
+        ><a href="images/gallery/19-800.jpg" data-fancybox="gal-1"
+          ><img src="images/gallery/19-250.jpg" alt="" loading="lazy" /></a
+        ><a href="images/gallery/20-800.jpg" data-fancybox="gal-1"
+          ><img src="images/gallery/20-250.jpg" alt="" loading="lazy" /></a
+        ><a href="images/gallery/21-800.jpg" data-fancybox="gal-1"
+          ><img src="images/gallery/21-250.jpg" alt="" loading="lazy" /></a
+        ><a href="images/gallery/22-800.jpg" data-fancybox="gal-1"
+          ><img src="images/gallery/22-250.jpg" alt="" loading="lazy" /></a
+        ><a href="images/gallery/23-800.jpg" data-fancybox="gal-1"
+          ><img src="images/gallery/23-250.jpg" alt="" loading="lazy" /></a
+        ><a href="images/gallery/24-800.jpg" data-fancybox="gal-1"
+          ><img src="images/gallery/24-250.jpg" alt="" loading="lazy" /></a
+        ><a href="images/gallery/25-800.jpg" data-fancybox="gal-1"
+          ><img src="images/gallery/25-250.jpg" alt="" loading="lazy" /></a
+        ><a href="images/gallery/26-800.jpg" data-fancybox="gal-1"
+          ><img src="images/gallery/26-250.jpg" alt="" loading="lazy" /></a
+        ><a href="images/gallery/27-800.jpg" data-fancybox="gal-1"
+          ><img src="images/gallery/27-250.jpg" alt="" loading="lazy" /></a
+        ><a href="images/gallery/28-800.jpg" data-fancybox="gal-1"
+          ><img src="images/gallery/28-250.jpg" alt="" loading="lazy" /></a
+        ><a href="images/gallery/29-800.jpg" data-fancybox="gal-1"
+          ><img src="images/gallery/29-250.jpg" alt="" loading="lazy" /></a
+        ><a href="images/gallery/30-800.jpg" data-fancybox="gal-1"
+          ><img src="images/gallery/30-250.jpg" alt="" loading="lazy" /></a
+        ><a href="images/gallery/31-800.jpg" data-fancybox="gal-1"
+          ><img src="images/gallery/31-250.jpg" alt="" loading="lazy"
+        /></a>
+      </div>
+    </section>
+
+    <section id="lk">
+      <div class="content">
+        <h2>Личный кабинет</h2>
+
+        <p>
+          Для получения пароля от личного кабинета необходимо подписаться на
+          <a
+            href="http://t.me/tennisschool_bot "
+            rel="noindex"
+            target="__blank"
+          >
+            телеграмм бота
+          </a>
+          и отправить ему номер телефона.
+        </p>
+        <p>
+          После перейти по
+          <a
+            href="https://ivanovtennisschool.cab.go-crm.ru/login"
+            target="__blank"
+            >ссылке</a
+          >
+          , вводим свой номер телефона
+        </p>
+        <p>Бот пришлет вам пароль в телеграмм.</p>
+        <p>
+          Так же бот будет присылать вам уведомления о записи на тренировку и об
+          окончании срока действия абонемента и занятий.
+        </p>
       </div>
     </section>
 
